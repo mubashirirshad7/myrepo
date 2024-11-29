@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: inline-block;
+            border: 3px solid black;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        .main label,input{
+            margin: 5px;
+            font-size: 14px;
+        }
+        .main button{
+            border-radius: 20%;
+            padding: 10px 20px ;
+            font-size: 16px;
+            margin-top: 10px;
+            background-color:blue;
+            color:pink;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="main">
+            <h1>REGISTRATION FORM</h1>
+            <label>NAME</label>
+            <input type="text" id="name" placeholder="ENTER YOUR NAME">
+            <br>
+            <label>PHONE</label>
+            <input type="text" id="phone" placeholder="ENTER YOUR PHONE">
+            <br>
+            <label>EMAIL</label>
+            <input type="email" id="email" placeholder="ENTER YOUR EMAIL">
+            <br>
+            <label>PASSWARD</label>
+            <input type="password" id="password" placeholder="ENTER YOUR PASSWARD">
+            <br>
+            <label>COUNTRY</label>
+            <input type="text" id="country" placeholder="ENTER YOUR COUNTRY">
+            <br>
+            <label>CITY</label>
+            <input type="text" id="city" placeholder="CITY">.
+            <br>
+            <button onclick="cal()">Insert Data</button>
+            <br>
+            <h1 id="result name"></h1>
+            <h1 id="result phone"></h1>
+            <h1 id="result email"></h1>
+            <h1 id="result paswward"></h1>
+            <h1 id="result country"></h1>
+            <h1 id="result city"></h1>
+        </div>
+    </center>
+</body>
+<script>
+    function cal()
+    {
+        var Name = document.getElementById("name").value;
+        var Phone = document.getElementById("phone").value;
+        var Email = document.getElementById("Email").value;
+        var Paswward = document.getElementById("Paswward").value;
+        var Country = document.getElementById("Country").value;
+        var City = document.getElementById("City").value;
+
+        var Name = document.getElementById("rename").innerHTML = name;
+        var Phone = document.getElementById("rephone").innerHTML = phone;
+        var Email = document.getElementById("reEmail").innerHTML = email;
+        var Paswward = document.getElementById("rePaswward").innerHTML = passward;
+        var Country = document.getElementById("reCountry").innerHTML = Country;
+        var City = document.getElementById("reCity").innerHTML = city;
+
+    }
+</script>
+</html>

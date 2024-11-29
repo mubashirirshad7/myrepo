@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var fruits = ["apple","mango","grapes","kiwi","pineapple","banana","strawberry","orange"];
+    //  document.write(fruits.lenght);
+    // document.write(fruits[1]);
+    for(var i = 0 ; i<fruits.length ; i++)
+    {
+        document.write(fruits[i] + "</br>");
+    }
+    var student1 = {
+        name : "Muhammad Mubashir",
+        age : 18,
+        married : false,
+        salary : null,
+        job : undefined,
+        intro : function(){
+            return "My name is "+ student1.name + " and age is "+ student1.age;
+        }
+    };
+    document.write(student1.intro());
+
+</script>
+</html>
